@@ -1,9 +1,54 @@
 // styled-component 전역 변수 선언
 :root {
-  // main color 지정
-  --primary-color: #000; //#2b90d9;
-  --secondary-color: #6e6e6e; //rgb(120, 120, 135);
-  --third-color: #f06548;
+  /* color-system */
+  // 1. main-color
+  --blue-color: #0085ff; //#2b90d9;
+  --black-color: #000; //rgb(120, 120, 135);
+  --white-color: #fff;
+  --red-color: #f06548;
+
+  // 2. gray-color
+  --gray-70: #f9f9f9;
+  --gray-550: #909090;
+  --gray-570: #7c7c7c;
+  --gray-650: #5f5f5f;
+  --gray-850: #393939;
+
+  // 3. cool-gary-color
+  --gray-300: #c2c2c2;
+  --gray-450: #82858c;
 
   // text color
 }
+
+/* color-system */
+// 1. main-color
+$blue-color: #0085ff;
+$black-color: #000;
+$white-color: #fff;
+$red-color: #f06548;
+
+// 2. gray-color
+$gray-70: #f9f9f9;
+$gray-550: #909090;
+$gray-570: #7c7c7c;
+$gray-650: #5f5f5f;
+$gray-850: #393939;
+
+// 3. cool-gary-color
+$gray-300: #c2c2c2;
+$gray-450: #82858c;
+
+/* figure shape */
+$default-box-radius: 8px;
+$default-button-radius: 7px;
+
+/* font */
+// 1. editor
+$title-logo-size: 31px;
+$content-text-size: 20px;
+
+// 2. document
+$document-title-size: 28px;
+$document-sub-title-size: 23px;
+$document-text-size: 14px;

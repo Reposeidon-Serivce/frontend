@@ -45,10 +45,17 @@ $default-button-radius: 7px;
 
 /* font */
 // 1. editor
-$title-logo-size: 31px;
-$content-text-size: 20px;
+$title-logo-size: 31.5px;
+$title-sub-text: 14px;
+$content-text-size: 16px;
+
+$title-logo-border: 700;
+$content-text-bord: 400;
 
 // 2. document
 $document-title-size: 28px;
 $document-sub-title-size: 23px;
 $document-text-size: 14px;
+
+/* button effect */
+$box-shadow: 0 0 2px 2px $gray-300;

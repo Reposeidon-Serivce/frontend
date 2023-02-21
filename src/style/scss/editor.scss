@@ -1,7 +1,121 @@
 @import "../_variables.scss";
 
 .editor-container {
-  background-color: $blue-color;
   width: 66vw;
-  height: 100vh;
+  max-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  padding: 30px 20px;
+
+  // 헤더 영역
+  .editor-title-contianer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 6vh;
+
+    .title-text {
+      display: flex;
+      height: 40px;
+      align-items: end;
+      padding: 0 10px 10px 0;
+
+      span {
+        font-size: $title-logo-size;
+        font-weight: $title-logo-border;
+      }
+    }
+
+    .sub-title-text {
+      display: flex;
+      height: 40px;
+      align-items: end;
+      padding-bottom: 10px;
+      span {
+        font-size: $title-sub-text;
+      }
+    }
+  }
+
+  // 바디(에디터 입력) 영역
+  .editor-content-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: space-around;
+    height: 100%;
+    padding: 20px;
+
+    border-radius: $default-box-radius;
+    border: 1px solid $black-color;
+
+    // 에디터 제목
+    .content-title-box {
+      display: flex;
+      justify-content: space-between;
+      padding: 15px 0px;
+
+      .content-title-text {
+        font-size: $content-text-size;
+        color: $gray-450;
+        width: 50px;
+      }
+
+      .content-title-input {
+        color: $gray-450;
+        width: 100%;
+        border: none;
+        border-bottom: 1px solid $black-color;
+        &:focus {
+          outline: none;
+        }
+      }
+    }
+
+    // 에디터 본문
+    .content-body-box {
+      height: 100%;
+      background-color: $gray-70;
+      padding: 15px;
+      border-radius: $default-box-radius;
+      border: none;
+
+      &:focus {
+        outline: none;
+      }
+    }
+
+    // 에디터 하단
+    .editor-footer {
+      display: flex;
+      justify-content: space-between;
+      padding-top: 10px;
+
+      .save-button {
+        border-radius: $default-button-radius;
+        border: 1px solid $gray-450;
+        background-color: $gray-70;
+        width: 120px;
+        height: 30px;
+
+        &:hover {
+          box-shadow: $box-shadow;
+        }
+      }
+
+      .tool-box {
+        display: flex;
+        width: 150px;
+        justify-content: space-between;
+
+        span {
+          font-size: $content-text-size;
+        }
+
+        .text-length {
+          font-weight: $content-text-bord;
+        }
+      }
+    }
+  }
 }

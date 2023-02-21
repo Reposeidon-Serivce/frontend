@@ -16,8 +16,101 @@
 /* color-system */
 /* figure shape */
 /* font */
+/* button effect */
 .editor-container {
-  background-color: #0085ff;
   width: 66vw;
-  height: 100vh;
+  max-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  padding: 30px 20px;
+}
+.editor-container .editor-title-contianer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  height: 6vh;
+}
+.editor-container .editor-title-contianer .title-text {
+  display: flex;
+  height: 40px;
+  align-items: end;
+  padding: 0 10px 10px 0;
+}
+.editor-container .editor-title-contianer .title-text span {
+  font-size: 31.5px;
+  font-weight: 700;
+}
+.editor-container .editor-title-contianer .sub-title-text {
+  display: flex;
+  height: 40px;
+  align-items: end;
+  padding-bottom: 10px;
+}
+.editor-container .editor-title-contianer .sub-title-text span {
+  font-size: 14px;
+}
+.editor-container .editor-content-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: space-around;
+  height: 100%;
+  padding: 20px;
+  border-radius: 8px;
+  border: 1px solid #000;
+}
+.editor-container .editor-content-container .content-title-box {
+  display: flex;
+  justify-content: space-between;
+  padding: 15px 0px;
+}
+.editor-container .editor-content-container .content-title-box .content-title-text {
+  font-size: 16px;
+  color: #82858c;
+  width: 50px;
+}
+.editor-container .editor-content-container .content-title-box .content-title-input {
+  color: #82858c;
+  width: 100%;
+  border: none;
+  border-bottom: 1px solid #000;
+}
+.editor-container .editor-content-container .content-title-box .content-title-input:focus {
+  outline: none;
+}
+.editor-container .editor-content-container .content-body-box {
+  height: 100%;
+  background-color: #f9f9f9;
+  padding: 15px;
+  border-radius: 8px;
+  border: none;
+}
+.editor-container .editor-content-container .content-body-box:focus {
+  outline: none;
+}
+.editor-container .editor-content-container .editor-footer {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 10px;
+}
+.editor-container .editor-content-container .editor-footer .save-button {
+  border-radius: 7px;
+  border: 1px solid #82858c;
+  background-color: #f9f9f9;
+  width: 120px;
+  height: 30px;
+}
+.editor-container .editor-content-container .editor-footer .save-button:hover {
+  box-shadow: 0 0 2px 2px #c2c2c2;
+}
+.editor-container .editor-content-container .editor-footer .tool-box {
+  display: flex;
+  width: 150px;
+  justify-content: space-between;
+}
+.editor-container .editor-content-container .editor-footer .tool-box span {
+  font-size: 16px;
+}
+.editor-container .editor-content-container .editor-footer .tool-box .text-length {
+  font-weight: 400;
 }/*# sourceMappingURL=editor.css.map */

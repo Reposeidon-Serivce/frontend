@@ -1,0 +1,21 @@
+@import "../_variables.scss";
+
+.main-page-wrap {
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+}
+
+.base-direction {
+  flex-direction: row;
+}
+
+.reverse-direction {
+  flex-direction: row-reverse;
+}
+
+.change-direction-button {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+}

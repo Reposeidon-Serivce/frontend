@@ -1,0 +1,23 @@
+:root {
+  /* color-system */
+  --blue-color: #0085ff;
+  --black-color: #000;
+  --white-color: #fff;
+  --red-color: #f06548;
+  --gray-70: #f9f9f9;
+  --gray-550: #909090;
+  --gray-570: #7c7c7c;
+  --gray-650: #5f5f5f;
+  --gray-850: #393939;
+  --gray-300: #c2c2c2;
+  --gray-450: #82858c;
+}
+
+/* color-system */
+/* figure shape */
+/* font */
+.editor-container {
+  background-color: #0085ff;
+  width: 66vw;
+  height: 100vh;
+}/*# sourceMappingURL=editor.css.map */

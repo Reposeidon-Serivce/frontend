@@ -4,6 +4,9 @@ import React, { useEffect, useState } from "react";
 import DocumentList from "components/list/DocumentList";
 import Editor from "components/editor/Editor";
 
+// icons
+import switchIcon from "assets/icons/btn_switch.svg";
+
 // style
 import "style/css/mainPage.css";
 
@@ -26,12 +29,12 @@ function MainPage(props: any) {
       <Editor resultData={resultData} />
       <DocumentList />
 
-      <button
+      <img
         className="change-direction-button"
+        src={switchIcon}
+        alt=""
         onClick={() => setChangeDirection(!changeDirection)}
-      >
-        change
-      </button>
+      />
     </div>
   );
 }

@@ -35,4 +35,8 @@
   position: fixed;
   top: 20px;
   right: 20px;
+  width: 50px;
+}
+.change-direction-button:hover {
+  cursor: pointer;
 }/*# sourceMappingURL=mainPage.css.map */

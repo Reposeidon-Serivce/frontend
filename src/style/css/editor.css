@@ -36,6 +36,9 @@
   align-items: end;
   padding: 0 10px 10px 0;
 }
+.editor-container .editor-title-contianer .title-text .logo-icon {
+  width: 40px;
+}
 .editor-container .editor-title-contianer .title-text span {
   font-size: 31.5px;
   font-weight: 700;
@@ -50,6 +53,7 @@
   font-size: 14px;
 }
 .editor-container .editor-content-container {
+  position: relative;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -70,23 +74,33 @@
   width: 50px;
 }
 .editor-container .editor-content-container .content-title-box .content-title-input {
-  color: #82858c;
   width: 100%;
   border: none;
   border-bottom: 1px solid #000;
 }
 .editor-container .editor-content-container .content-title-box .content-title-input:focus {
   outline: none;
+  border-bottom: 1px solid #0085ff;
+  font-weight: 500;
 }
 .editor-container .editor-content-container .content-body-box {
   height: 100%;
   background-color: #f9f9f9;
-  padding: 15px;
+  padding: 15px 30px 15px 15px;
   border-radius: 8px;
   border: none;
 }
 .editor-container .editor-content-container .content-body-box:focus {
   outline: none;
+}
+.editor-container .editor-content-container .erase-icon {
+  position: absolute;
+  top: 80px;
+  right: 25px;
+}
+.editor-container .editor-content-container .erase-icon:hover {
+  cursor: pointer;
+  filter: invert(16%) sepia(95%) saturate(6054%) hue-rotate(358deg) brightness(80%) contrast(113%);
 }
 .editor-container .editor-content-container .editor-footer {
   display: flex;
@@ -101,7 +115,10 @@
   height: 30px;
 }
 .editor-container .editor-content-container .editor-footer .save-button:hover {
-  box-shadow: 0 0 2px 2px #c2c2c2;
+  background-color: #0085ff;
+  color: #fff;
+  border: none;
+  cursor: pointer;
 }
 .editor-container .editor-content-container .editor-footer .tool-box {
   display: flex;
@@ -112,5 +129,11 @@
   font-size: 16px;
 }
 .editor-container .editor-content-container .editor-footer .tool-box .text-length {
-  font-weight: 400;
+  font-weight: 500;
+}
+.editor-container .editor-content-container .editor-footer .tool-box .search-icon {
+  width: 50px;
+}
+.editor-container .editor-content-container .editor-footer .tool-box .search-icon:hover {
+  cursor: pointer;
 }/*# sourceMappingURL=editor.css.map */

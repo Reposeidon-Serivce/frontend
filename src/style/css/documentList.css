@@ -18,7 +18,33 @@
 /* font */
 /* button effect */
 .document-list-container {
-  background-color: #0085ff;
+  background-color: #fbfbfb;
   width: 34vw;
-  height: 100vh;
+  max-height: 100vh;
+  padding: 30px 0px;
+}
+.document-list-container .document-list-header {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  height: 6vh;
+}
+.document-list-container .document-list-header .title {
+  font-size: 28px;
+  font-weight: 700;
+  margin: 0px 20px;
+}
+.document-list-container .document-list-header .document-list-header-container {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.document-list-container .document-list-header .document-list-header-container .document-list-header-item {
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+}
+.document-list-container .document-list-header .document-list-header-container .isSelected {
+  color: #0085ff;
+  border-bottom: 1px solid #0085ff;
 }/*# sourceMappingURL=documentList.css.map */

@@ -1,5 +1,6 @@
 @import "../_variables.scss";
 
+// DocumentList.tsx
 .document-list-container {
   background-color: $gray-200;
   width: 34vw;
@@ -34,5 +35,31 @@
         border-bottom: 1px solid $blue-color;
       }
     }
+  }
+}
+
+// ContentBlock.tsx
+.content-block-wrap {
+  padding: 15px;
+  cursor: pointer;
+
+  .content-block-title {
+    display: flex;
+    justify-content: space-between;
+
+    span {
+      font-size: $document-sub-title-size;
+      font-weight: $content-text-bord;
+    }
+  }
+
+  .content-block-body-text {
+    font-size: $document-text-size;
+    text-align: justify;
+  }
+
+  .content-block-url {
+    font-size: $document-text-size;
+    color: $gray-450;
   }
 }

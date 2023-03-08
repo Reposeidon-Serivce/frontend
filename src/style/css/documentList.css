@@ -47,4 +47,25 @@
 .document-list-container .document-list-header .document-list-header-container .isSelected {
   color: #0085ff;
   border-bottom: 1px solid #0085ff;
+}
+
+.content-block-wrap {
+  padding: 15px;
+  cursor: pointer;
+}
+.content-block-wrap .content-block-title {
+  display: flex;
+  justify-content: space-between;
+}
+.content-block-wrap .content-block-title span {
+  font-size: 14px;
+  font-weight: 500;
+}
+.content-block-wrap .content-block-body-text {
+  font-size: 14px;
+  text-align: justify;
+}
+.content-block-wrap .content-block-url {
+  font-size: 14px;
+  color: #82858c;
 }/*# sourceMappingURL=documentList.css.map */

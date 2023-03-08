@@ -1,7 +1,38 @@
 @import "../_variables.scss";
 
 .document-list-container {
-  background-color: $blue-color;
+  background-color: $gray-200;
   width: 34vw;
-  height: 100vh;
+  max-height: 100vh;
+  padding: 30px 0px;
+
+  .document-list-header {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    height: 6vh;
+
+    .title {
+      font-size: $document-title-size;
+      font-weight: $title-logo-border;
+      margin: 0px 20px;
+    }
+
+    .document-list-header-container {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+
+      .document-list-header-item {
+        font-size: $document-sub-title-size;
+        font-weight: $content-text-bord;
+        cursor: pointer;
+      }
+
+      .isSelected {
+        color: $blue-color;
+        border-bottom: 1px solid $blue-color;
+      }
+    }
+  }
 }
